@@ -15,7 +15,7 @@ const Todo = ({ todos, removeTodo }) => {
 					<div className='ms-2 me-auto'>
 						<div className=''>{todo.text}</div>
 					</div>
-					<Badge bg='secondary' pill className='shadow'>
+					<Badge bg='secondary' pill>
 						<GrFormClose className='icon' onClick={() => removeTodo(todo.id)} />
 					</Badge>
 				</ListGroup.Item>
