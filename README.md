@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# DEMO: https://shlev9d.github.io/todo-list/
 
 download this repository to your computer
 
