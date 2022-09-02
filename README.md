@@ -4,7 +4,7 @@ download this repository to your computer
 
 In the project directory, you can run:
 ### `npm install` 
-to download the node_modules
+download the node_modules
 ### `npm start`
-to run application
+run application
 
