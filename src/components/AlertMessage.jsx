@@ -11,7 +11,7 @@ const AlertMessage = ({ closeAlert }) => {
 					<strong className='me-auto'>Warning</strong>
 				</Toast.Header>
 				<Toast.Body>
-					<strong>You can only 10 notes</strong>
+					<strong>You can add only 10 notes</strong>
 				</Toast.Body>
 			</Toast>
 		</ToastContainer>

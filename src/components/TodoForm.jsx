@@ -23,7 +23,7 @@ const TodoForm = ({ addTodo}) => {
 			<Form.Group className={'d-flex mb-3 gap-2 '}>
 				<Form.Control
 					type='text'
-					placeholder='Write your task...'
+					placeholder='Write a note...'
 					value={inputValue}
 					onChange={handleChange}
 					className='shadow input'
