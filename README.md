@@ -1,4 +1,5 @@
-# demo: https://shlev9d.github.io/todo-list/
+# https://shlev9d.github.io/todo-list/
+demo
 
 download this repository to your computer
 
