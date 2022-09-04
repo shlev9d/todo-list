@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import AlertMessage from './AlertMessage'
 import Todo from './Todo'
 import TodoForm from './TodoForm'
@@ -6,11 +6,16 @@ import TodoForm from './TodoForm'
 const MAX_TODO = 10
 
 const TodoList = () => {
-	const [todos, setTodos] = useState([])
+	const [todos, setTodos] = useState( JSON.parse(localStorage.getItem('todos')) || [])
 	const [showAlert, setShowAlert] = useState(false)
+
+	useEffect(() => {
+		localStorage.setItem('todos', JSON.stringify(todos))
+	}, [todos])
 
 	const addTodo = todo => {
 		const newTodos = [todo, ...todos]
+		
 		if (todos.length >= MAX_TODO) {
 			setShowAlert(true)
 		} else {
@@ -19,7 +24,7 @@ const TodoList = () => {
 	}
 
 	const removeTodo = id => {
-		const arrTodos = [...todos].filter(todo => todo.id !== id)
+		const arrTodos = todos.filter(todo => todo.id !== id)
 		setTodos(arrTodos)
 	}
 

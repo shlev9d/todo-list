@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Button, Form } from 'react-bootstrap'
 import '../App.css'
 
-const TodoForm = ({ addTodo}) => {
+const TodoForm = ({addTodo}) => {
 	const [inputValue, setInputValue] = useState('')
 
 	const handleChange = e => setInputValue(e.target.value)
