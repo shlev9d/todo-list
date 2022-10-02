@@ -1,7 +1,6 @@
 # todo-list
 
-demo  [https://shlev9d.github.io/todo-list/
-demo]
+demo  [https://shlev9d.github.io/todo-list/]
 
 download this repository to your computer
 
